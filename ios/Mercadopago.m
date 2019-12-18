@@ -1,14 +1,15 @@
-#import "Mercadopago.h"
+//
+//  MercadopagoBridge.m
+//  Mercadopago
+//
+//  Created by Cristian Granada Leguia on 12/17/19.
+//  Copyright © 2019 Facebook. All rights reserved.
+//
 
+#import <React/RCTBridgeModule.h>
 
-@implementation Mercadopago
+@interface RCT_EXTERN_MODULE(Mercadopago, NSObject)
 
-RCT_EXPORT_MODULE()
-
-RCT_EXPORT_METHOD(sampleMethod:(NSString *)stringArgument numberParameter:(nonnull NSNumber *)numberArgument callback:(RCTResponseSenderBlock)callback)
-{
-    // TODO: Implement some actually useful functionality
-    callback(@[[NSString stringWithFormat: @"numberArgument: %@ stringArgument: %@", numberArgument, stringArgument]]);
-}
+RCT_EXTERN_METHOD(addEvent:(NSString *)name location:(NSString *)location date:(nonnull NSNumber *)date)
 
 @end

@@ -18,8 +18,10 @@ Pod::Spec.new do |s|
 
   s.source_files = "ios/**/*.{h,m,swift}"
   s.requires_arc = true
+  s.swift_version = "4.2"
 
   s.dependency "React"
+  # s.dependency "MercadoPagoSDK"
   # ...
   # s.dependency "..."
 end

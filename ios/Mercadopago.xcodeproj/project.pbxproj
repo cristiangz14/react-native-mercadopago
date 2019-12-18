@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3E7B58A1CC2AC0600A0062D /* Mercadopago.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* Mercadopago.m */; };
+		0D3BFEB2E9B9238A7C2631F4 /* Pods_Mercadopago.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B309352C96F2A8E7DDCFE4 /* Pods_Mercadopago.framework */; };
+		46775C0023A9A92400849C2F /* Mercadopago.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46775BFF23A9A92400849C2F /* Mercadopago.swift */; };
+		46775C0223A9AA3800849C2F /* Mercadopago.m in Sources */ = {isa = PBXBuildFile; fileRef = 46775C0123A9AA3800849C2F /* Mercadopago.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,9 +25,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		09B309352C96F2A8E7DDCFE4 /* Pods_Mercadopago.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mercadopago.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		134814201AA4EA6300B7C361 /* libMercadopago.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMercadopago.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5881CC2AC0600A0062D /* Mercadopago.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mercadopago.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* Mercadopago.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mercadopago.m; sourceTree = "<group>"; };
+		15768754949D4EE599F8855D /* Pods-Mercadopago.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mercadopago.debug.xcconfig"; path = "Target Support Files/Pods-Mercadopago/Pods-Mercadopago.debug.xcconfig"; sourceTree = "<group>"; };
+		46775BFE23A9A92400849C2F /* Mercadopago-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mercadopago-Bridging-Header.h"; sourceTree = "<group>"; };
+		46775BFF23A9A92400849C2F /* Mercadopago.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mercadopago.swift; sourceTree = "<group>"; };
+		46775C0123A9AA3800849C2F /* Mercadopago.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mercadopago.m; sourceTree = "<group>"; };
+		4CD0FC1565C4C7A3B24804E4 /* Pods-Mercadopago.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mercadopago.release.xcconfig"; path = "Target Support Files/Pods-Mercadopago/Pods-Mercadopago.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D3BFEB2E9B9238A7C2631F4 /* Pods_Mercadopago.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,13 +54,33 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4DACBA15CEC9E59500CAE0E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09B309352C96F2A8E7DDCFE4 /* Pods_Mercadopago.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				B3E7B5881CC2AC0600A0062D /* Mercadopago.h */,
-				B3E7B5891CC2AC0600A0062D /* Mercadopago.m */,
+				46775C0123A9AA3800849C2F /* Mercadopago.m */,
+				46775BFF23A9A92400849C2F /* Mercadopago.swift */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				B13B48C46C86507664385FDE /* Pods */,
+				4DACBA15CEC9E59500CAE0E6 /* Frameworks */,
+				46775BFE23A9A92400849C2F /* Mercadopago-Bridging-Header.h */,
 			);
+			sourceTree = "<group>";
+		};
+		B13B48C46C86507664385FDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15768754949D4EE599F8855D /* Pods-Mercadopago.debug.xcconfig */,
+				4CD0FC1565C4C7A3B24804E4 /* Pods-Mercadopago.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -63,6 +90,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "Mercadopago" */;
 			buildPhases = (
+				7116B1CE188647C2912ECB9E /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -87,6 +115,7 @@
 				TargetAttributes = {
 					58B511DA1A9E6C8500147676 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -95,6 +124,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
@@ -107,12 +137,38 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7116B1CE188647C2912ECB9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mercadopago-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E7B58A1CC2AC0600A0062D /* Mercadopago.m in Sources */,
+				46775C0223A9AA3800849C2F /* Mercadopago.m in Sources */,
+				46775C0023A9A92400849C2F /* Mercadopago.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,33 +270,44 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15768754949D4EE599F8855D /* Pods-Mercadopago.debug.xcconfig */;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
-				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = Mercadopago;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		58B511F11A9E6C8500147676 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = Mercadopago;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Mercadopago-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		58B511F11A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CD0FC1565C4C7A3B24804E4 /* Pods-Mercadopago.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = Mercadopago;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Mercadopago-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
